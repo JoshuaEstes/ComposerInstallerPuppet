@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-0": {
-            "JoshuaEstes\\Composer\\Installer\\Puppet\\": "src/"
+            "JoshuaEstes\\Composer\\Installer\\Puppet\\": ""
         }
     },
     "target-dir": "JoshuaEstes/Composer/Installer/Puppet",
