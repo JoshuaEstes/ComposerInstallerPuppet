@@ -16,8 +16,9 @@ class Installer extends LibraryInstaller
      */
     public function getInstallPath(PackageInterface $package)
     {
-        $extra = $package->getExtra();
-        return 'app/Resources/puppet/modules/' . $extra['puppet-module'];
+        $extra     = $package->getExtra();
+        $rootExtra = $this->composer->getPackage()->getExtra();
+        return $rootExtra['puppet-modules-path'] . '/' . $extra['puppet-module'];
     }
 
     /**
