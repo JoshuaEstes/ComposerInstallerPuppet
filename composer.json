@@ -1,0 +1,29 @@
+{
+    "name": "joshuaestes/composer-installer-puppet",
+    "description": "Allows you to install puppet modules",
+    "type": "composer-installer",
+    "keywords": ["puppet"],
+    "homepage": "https://github.com/JoshuaEstes/ComposerInstallerPuppet",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Joshua Estes",
+            "homepage": "http://joshuaestes.me"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/JoshuaEstes/ComposerInstallerPuppet/issues"
+    },
+    "autoload": {
+        "psr-0": {
+            "JoshuaEstes\\Composer\\Installer\\Puppet\\": "src/"
+        }
+    },
+    "target-dir": "JoshuaEstes/Composer/Installer/Puppet",
+    "extra": {
+        "class": "JoshuaEstes\\Composer\\Installer\\Puppet\\Installer",
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
