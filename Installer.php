@@ -18,6 +18,9 @@ class Installer extends LibraryInstaller
     {
         $extra     = $package->getExtra();
         $rootExtra = $this->composer->getPackage()->getExtra();
+        if (empty($rootExtra['puppet-modules-path']) || empty($extra['puppet-module'])) {
+            throw new \Exception('puppet-modules-path or puppet-module is not defined');
+        }
         return $rootExtra['puppet-modules-path'] . '/' . $extra['puppet-module'];
     }
 
