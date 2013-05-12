@@ -24,7 +24,8 @@ class Installer extends LibraryInstaller
      */
     public function supports($packageType)
     {
-        return ($packageType === "puppet-module");
+        var_dump($packageType);
+        return $packageType === 'puppet-module';
     }
 
 }
