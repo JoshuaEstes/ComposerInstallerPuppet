@@ -19,6 +19,7 @@
             "JoshuaEstes\\Composer\\Installer\\Puppet\\": "src/"
         }
     },
+    "target-dir": "JoshuaEstes/Composer/Installer/Puppet",
     "extra": {
         "class": "JoshuaEstes\\Composer\\Installer\\Puppet\\Installer",
         "branch-alias": {
