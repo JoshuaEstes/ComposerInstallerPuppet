@@ -18,6 +18,7 @@ class Installer extends LibraryInstaller
     {
         $extra     = $package->getExtra();
         $rootExtra = $this->composer->getPackage()->getExtra();
+        die(var_dump($rootExtra));
         return $rootExtra['puppet-modules-path'] . '/' . $extra['puppet-module'];
     }
 
