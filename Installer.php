@@ -16,7 +16,8 @@ class Installer extends LibraryInstaller
      */
     public function getInstallPath(PackageInterface $package)
     {
-        return 'app/Resources/puppet/modules';
+        var_dump($package);
+        return 'app/Resources/puppet/modules/' . $package->getPrettyName();
     }
 
     /**
