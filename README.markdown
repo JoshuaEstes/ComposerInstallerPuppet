@@ -20,7 +20,7 @@ your puppet module. Below is an example:
                 "url": "git://github.com/JoshuaEstes/ComposerInstallerPuppet.git"
             }
         ],
-        "requires": {
+        "require": {
             "joshuaestes/composer-installer-puppet": "*"
         },
         "extra": {
