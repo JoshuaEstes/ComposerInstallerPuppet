@@ -42,6 +42,11 @@ want to install them. Below is an example
 Using the 2 above composer.json files, the installer will install
 your puppet module into the directory `app/Resources/puppet/modules/php`.
 
+## NOTE
+
+You will need to add the path to where the modules are placed in your `.gitignore`
+file. Generally this will be what you set your `puppet-modules-path` to.
+
 # License
 
 Copyright (C) 2013 Joshua Estes
