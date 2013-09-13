@@ -6,7 +6,10 @@ I have a few of my own custom modules that I use. I don't want to set
 up the project as a puppet master/agent so I just have the manifests
 run locally.
 
-# Usage
+You can also use this for making sure that you puppet master always
+uses the most stable of code.
+
+# Usage (puppet module)
 
 You will need to create and drop in a `composer.json` file into
 your puppet module. Below is an example:
@@ -21,26 +24,39 @@ your puppet module. Below is an example:
             }
         ],
         "require": {
-            "joshuaestes/composer-installer-puppet": "*"
+            "joshuaestes/composer-installer-puppet": "~2.0"
         },
         "extra": {
-            "puppet-module": "php"
+            "puppet": {
+                "module_name": "php"
+            }
         }
     }
 
-In your main root project's composer.json you need to add in your "extra"
-part, a variable named "puppet-modules-path" with a path to where you
-want to install them. Below is an example
+* `type` Must equal `puppet-module`
+* You must give this a module name in the `extra` configuration
+
+# Usage (main project)
+
+In your main project's `composer.json` you need to make sure that
+you are including your puppet module and also give it a path to install
+the module at.
 
     {
         ...
+        "require": {
+            "joshuaestes/puppet-php": "~1.0"
+        },
         "extra": {
-            "puppet-modules-path": "app/Resources/puppet/modules"
+            "puppet": {
+                "modules_path": "app/Resources/puppet/modules"
+            }
         }
     }
 
-Using the 2 above composer.json files, the installer will install
-your puppet module into the directory `app/Resources/puppet/modules/php`.
+Since we have configured our puppet module with a name of "php" and now have
+a modules path set, the code will be installed in this path, ie
+`app/Resources/puppet/modules/php`.
 
 ## NOTE
 
