@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-0": {
-            "JoshuaEstes\\Composer\\Installer": "src"
+            "JoshuaEstes\\Composer\\Installer": "src/"
         }
     },
     "extra": {
