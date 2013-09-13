@@ -23,7 +23,7 @@
         }
     },
     "extra": {
-        "class": "JoshuaEstes\\Composer\\Installer\\PuppetPlugin",
+        "class": "JoshuaEstes\\Composer\\Installer\\PuppetInstaller",
         "branch-alias": {
             "dev-master": "2.0-dev"
         }
