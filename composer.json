@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-0": {
-            "JoshuaEstes\\Composer\\Installer": ""
+            "JoshuaEstes\\Composer\\Installer": "src"
         }
     },
     "target-dir": "JoshuaEstes/Composer/Installer",
