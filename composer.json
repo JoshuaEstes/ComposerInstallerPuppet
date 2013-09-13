@@ -1,7 +1,7 @@
 {
     "name": "joshuaestes/composer-installer-puppet",
     "description": "This custom installer allows you to manage your puppet modules with composer.",
-    "type": "composer-plugin",
+    "type": "composer-installer",
     "keywords": ["puppet"],
     "homepage": "https://github.com/JoshuaEstes/ComposerInstallerPuppet",
     "license": "MIT",
