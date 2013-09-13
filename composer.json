@@ -21,6 +21,7 @@
     },
     "extra": {
         "class": "JoshuaEstes\\Composer\\Installer\\PuppetPlugin",
+        "composer-plugin-api": "1.0.0",
         "branch-alias": {
             "dev-master": "2.0-dev"
         }
