@@ -19,6 +19,7 @@ class PuppetInstaller extends LibraryInstaller
         $extra     = $package->getExtra();
         $rootExtra = $this->composer->getPackage()->getExtra();
         $settings  = $rootExtra['puppet'];
+        var_dump($extra,$settings);
 
         if (empty($settings['modules_path'])) {
             throw new \Exception('modules_path is not defined');
